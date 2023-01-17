@@ -1,44 +1,64 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
-
 Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
+ - Coins changing
 
-# NomedoProjeto
+# Greed Bit Trader
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 25<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0068229  |  Victor Yukio Cavalcanti Miki |
+| 18/0016067  |  Erick levy Barbosa Dos Santos|
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Fizemos uma aplicação Web em react que simula a criação de moedas e poder fazer compras recebendo o troco nas bit moedas criadas!  
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![loja](./imagens/loja-1.png)
+
+![troca](./imagens/trader.png)
+
+![banco](./imagens/banco.png)
+
+![loja 2](./imagens/loja-2.png)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: javascript<br>
+**Framework**: React<br>
+### Pré-requisitos
+
+Para rodar a aplicação é nescessário instalar:
+
+* NodeJs >= 14.0
+* npm >= 5.6
+
+| nota: "npx" é uma ferramenta executor e já vem incluso com a instalação no npm.
+
+Você pode instalar o nodeJs via nvm que já gerencia a versão que você está usando.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Para rodar o projeto siga o passo-a-passo:
+
+1. Clone o repositório:
+
+| $ git clone https://github.com/projeto-de-algoritmos/Greed_BitTrader.git
+
+2. acesse a pasta "app":
+
+| $ cd app
+
+3. instale aos pacotes necessários via npm:
+
+| $ npm install
+
+4. rode o programa com o comando:
+
+| npm start
+
+Uma página deverá abrir automáticamente no seu navegador pelo endereço: http://localhost:3000/. Crie sua moedas e faça trocas na nossa loja de escâmbio online.
 
 
 
