@@ -3,9 +3,11 @@ import { Title, SubTitle } from "./styles"
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from "react-router-dom";
+import { CoinsService } from "../../Services/coinsService";
 
 const Home = () => {
   const navigate = useNavigate();
+  const coinsService = new CoinsService()
 
   return (
     <div
@@ -23,7 +25,7 @@ const Home = () => {
         Bem vindo ao Bit Trader!
       </Title>
       <SubTitle>
-        Aki jas uma descrição
+        Crie sua moedas agora!
       </SubTitle>
 
       <div
@@ -41,6 +43,7 @@ const Home = () => {
           }} variant="outline-primary"
           onClick={() => {
             navigate("/loja")
+            coinsService.setCoinsLocalStorage()
           }}
         >
           Vamos começar!

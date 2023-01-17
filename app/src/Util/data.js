@@ -1,28 +1,31 @@
 const coins = [
   {
-    name: "Real",
-    valor: 1,
-    color: "red"
+    name: "dogecoin",
+    value: 3.14,
+    textColor: "black",
+    color: "green",
+    amount: 1000
+  },
+  {
+    name: "Real coin",
+    value: 10,
+    textColor: "black",
+    color: "blue",
+    amount: 100
+  },
+  {
+    name: "fga coin",
+    value: 77,
+    textColor: "white",
+    color: "black",
+    amount: 10
   },
   {
     name: "bitcoin",
-    valor: 5,
-    color: "blue"
-  },
-  {
-    name: "dogecoin",
-    valor: 3,
-    color: "green"
-  },
-  {
-    name: "FTX Token",
-    valor: 11,
-    color: "yellow"
-  },
-  {
-    name: "fgacoin",
-    valor: 67,
-    color: "black"
+    value: 9999,
+    textColor: "black",
+    color: "blue",
+    amount: 1
   },
 ]
 

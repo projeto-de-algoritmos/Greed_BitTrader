@@ -1,23 +1,45 @@
-import coins from '../Util/data';
+import { CoinsService } from './coinsService';
 
-export class GreedService  {
-    findmin(value){
-        let answer = [];
-        console.log(answer, "antes do for");
-        for(let i = coins.length-1; i >= 0; i--){
-            console.log(coins[i].valor, "valor");
-            while(value >= coins[i].valor){
-                value -= coins[i].valor;
-                answer.push(coins[i].name);
-                console.log(answer, "dentro do for");
-                
+export class GreedService {
+    findmin(value) {
 
-            }
-        // find min value
-        // return min value
+        const coinsService = new CoinsService()
+
+        let res = {
+            trash: null,
+            coins: []
         }
-        console.log(answer, "depois do for");
-        return answer;
+
+        let answer = [];
+
+        let coins = coinsService.getCoins();
+
+        console.log(coins, "ultimo")
+
+        for (let i = coins.length - 1; i >= 0; i--) {
+            console.log(coins.length)
+            let j = 1;
+            while (value >= coins[i].value && (coins[i].amount > j)) {
+                value -= coins[i].value;
+                answer.push(coins[i].name);
+                j++;
+            }
+        }
+
+        res.coins = answer;
+
+        if (Math.floor(value) !== 0) {
+
+            res.trash = "não temos moedas para abater o seu valor... aceita troco em bala?"
+
+            if(value > coins[0].value) {
+                res.trash = "não temos dinheiro suficiente. Porque não inflacionamos nosso mercado criando mais moedas?!"
+            }
+        } else {
+            res.trash = null
+        }
+
+        return res;
     }
 };
 
