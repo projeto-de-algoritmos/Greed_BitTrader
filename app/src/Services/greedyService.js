@@ -19,7 +19,7 @@ export class GreedService {
         for (let i = coins.length - 1; i >= 0; i--) {
             console.log(coins.length)
             let j = 1;
-            while (value >= coins[i].value && (coins[i].amount > j)) {
+            while (value >= coins[i].value && (coins[i].amount >= j)) {
                 value -= coins[i].value;
                 answer.push(coins[i].name);
                 j++;
